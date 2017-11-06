@@ -16,7 +16,7 @@ layui.use(['carousel', 'form'], function(){
     carousel.render({
         elem: '#test1'
         //,arrow: 'always'
-        ,width: '1200px'
+        ,width: '100%'
         ,height: '380px'
         ,anim: 'fade'
     });

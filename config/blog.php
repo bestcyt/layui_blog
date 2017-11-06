@@ -7,6 +7,6 @@
  */
 
 return [
-  'web_path' => 'http://www.blog.cn'  ,
+  'web_path' => 'http://local.blog.cn'  ,
 
 ];

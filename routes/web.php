@@ -15,7 +15,10 @@
 //    return view('welcome');
 //});
 
-
+//根据不同的url
+Route::get('admin/pjax',function (){
+    echo "<div style='background: green'>sadfaf</div>";
+});
 Route::get('/','home\HomeController@index');
 
 
@@ -37,7 +40,3 @@ Route::post('admin/article/post','admin\ArticleController@add');
 
 
 
-//根据不同的url
-Route::get('admin/pjax',function (){
-   echo "<div style='background: green'>sadfaf</div>";
-});

@@ -4,15 +4,10 @@
         <div class="layui-col-md12" style="color: #00A000">
             <ul class="layui-nav" lay-filter="">
                 <li class="layui-nav-item">blog</li>
-                <li class="layui-nav-item"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                 <li class="layui-nav-item layui-this"><a href="{{ url('/') }}">首页</a></li>
-                <li class="layui-nav-item"><a href="#">&nbsp;</a></li>
                 <li class="layui-nav-item"><a href="{{ url('tag/1') }}">tag1</a></li>
-                <li class="layui-nav-item"><a href="#">&nbsp;</a></li>
                 <li class="layui-nav-item"><a href="{{ url('tag/2') }}">tag2</a></li>
-                <li class="layui-nav-item"><a href="#">&nbsp;</a></li>
                 <li class="layui-nav-item"><a href="{{ url('tag/3') }}">tag3</a></li>
-                <li class="layui-nav-item"><a href="#">&nbsp;</a></li>
                 <li class="layui-nav-item">
                     <a href="javascript:;">tag1</a>
                     <dl class="layui-nav-child"> <!-- 二级菜单 -->
@@ -23,12 +18,6 @@
                 </li>
                 <li class="layui-nav-item"><a href="">&nbsp;</a></li>
                 <li class="layui-nav-item"><a href="{{ url('tag/6') }}">tag6</a></li>
-                <li class="layui-nav-item"><a href=""></a></li>
-                <li class="layui-nav-item"><a href=""></a></li>
-                <li class="layui-nav-item"><a href=""></a></li>
-                <li class="layui-nav-item"><a href=""></a></li>
-                <li class="layui-nav-item"><a href=""></a></li>
-
 
                 <li class="layui-nav-item">
                     @inject('Session', 'Illuminate\Support\Facades\Session')

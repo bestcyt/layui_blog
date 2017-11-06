@@ -116,7 +116,6 @@
 
                                 console.log(obj); //得到当前页，以便向服务端请求对应页的数据。
 //                                console.log(obj.limit); //得到每页显示的条数
-
                                 //首次不执行
                                 if(!first){
                                     //do something

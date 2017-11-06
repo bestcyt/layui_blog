@@ -21,9 +21,9 @@
     <fieldset class="layui-elem-field layui-field-title " style=" margin-top: 30px;color: black">
         <legend>blog 后台</legend>
     </fieldset>
-    <div class="layui-row layui-col-space10">
-        <div class="layui-col-xs4 layui-col-sm5 layui-col-md1">
-            <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px; width: 100%">
+    <div class="layui-row layui-col-space0">
+        <div class="layui-col-xs4 layui-col-sm5 layui-col-md2">
+            <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="width: 100%">
                 <li class="layui-nav-item layui-nav-itemed">
                     <a href="javascript:;">文章模块</a>
                     <dl class="layui-nav-child">
@@ -49,7 +49,7 @@
         <div class="layui-col-xs4 layui-col-sm5 layui-col-md8" id="frame">
             @yield('body')
         </div>
-        <div class="layui-col-xs4 layui-col-sm5 layui-col-md3" style="background: blue">
+        <div class="layui-col-xs4 layui-col-sm5 layui-col-md2" style="background: blue">
             asdfadf
         </div>
     </div>
