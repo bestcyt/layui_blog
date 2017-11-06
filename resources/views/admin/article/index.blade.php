@@ -1,5 +1,6 @@
 @extends('admin.layout')
 
 @section('body')
-文章列表
+
+    @include('admin.pjax.index')
 @endsection

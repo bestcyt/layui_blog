@@ -31,6 +31,9 @@ Route::post('admin/login','admin\IndexController@login');
 Route::get('admin/article/list','admin\ArticleController@index');
 
 Route::get('admin/article/add','admin\ArticleController@add');
+Route::post('admin/article/post','admin\ArticleController@add');
+
+
 
 
 

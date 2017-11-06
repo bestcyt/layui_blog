@@ -1,5 +1,5 @@
 @extends('admin.layout')
 
 @section('body')
-增加文章
+    @include('admin.pjax.add')
 @endsection

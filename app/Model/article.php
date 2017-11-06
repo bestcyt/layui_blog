@@ -30,4 +30,14 @@ class article extends Model
     }
 
 
+    /*
+     * 新增文章
+     */
+    public static function insertArticle($request){
+        $data['title'] = $request->title;
+        $data['desc'] = $request->desc;
+        $data['text'] = $request->text;
+
+        return static::insert($data);
+    }
 }
