@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\admin;
 
+use App\Model\time;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,7 +14,10 @@ class IndexController extends Controller
 //
 //            return view('admin/index');
 //        }
-        return view('admin/index');
+
+        //获取时间线
+        $time_list = time::get();
+        return view('admin/index',['time'=>$time_list]);
     }
 
     public function login(Request $request){

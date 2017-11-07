@@ -9,6 +9,7 @@
     <script src="{{ asset('js/jquery.js') }}"></script>
     {{--<script src="{{ asset('js/bootstrap.js') }}"></script>--}}
     <script src="{{ asset('ui/layui/layui.js') }}" charset="utf-8"></script>
+    <link rel="stylesheet" href="{{ asset('home/css/lay_global.css') }}" media="all">
     @yield('head')
 </head>
 <body style="background: #f7ffec">

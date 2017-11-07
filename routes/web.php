@@ -37,6 +37,9 @@ Route::get('admin/article/add','admin\ArticleController@add');
 Route::post('admin/article/post','admin\ArticleController@add');
 
 
+Route::get('admin/time/add','admin\TimeController@add');
+Route::post('admin/time/post','admin\TimeController@post');
+
 
 
 
