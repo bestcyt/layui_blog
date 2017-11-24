@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\model\article;
+use App\model\tag;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -35,6 +36,7 @@ class ArticleController extends Controller
     * 增加文章
     */
     public function add(Request $request){
+
         if ($request->file()){
             foreach ($_FILES as $FILE){
                 $filename ='article_'.time().$FILE['name'];
@@ -44,6 +46,8 @@ class ArticleController extends Controller
             return json_encode(['code'=>0,'msg'=>'ok','data'=>['src'=>$src]]);
         }
         if ($request->method() == 'POST'){
+
+
             $re = article::insertArticle($request);
             if ($re){
                 //成功 插入前校验 弹窗
@@ -52,7 +56,9 @@ class ArticleController extends Controller
             }
         }
 
-        return view($this->view_path_pre.'add');
+        $tags = tag::get();
+
+        return view($this->view_path_pre.'add',['tags'=>$tags]);
     }
 
 }

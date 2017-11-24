@@ -34,6 +34,12 @@ class article extends Model
      * 新增文章
      */
     public static function insertArticle($request){
+
+        $arr = [];
+        foreach ($request->type as $key=>$val){
+            $arr[] =$key;
+        }
+        $data['tag'] = implode(',',$arr);
         $data['title'] = $request->title;
         $data['desc'] = $request->desc;
         $data['text'] = $request->text;

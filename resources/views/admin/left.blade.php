@@ -1,5 +1,5 @@
 <ul class="layui-timeline">
-    @if($time)
+    @if(isset($time))
         @foreach($time as $item)
         <li class="layui-timeline-item">
             <i class="layui-icon layui-timeline-axis"></i>
