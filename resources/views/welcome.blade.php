@@ -13,22 +13,22 @@
 @include('home/article/article_list')
 
 
-{{--<div class="layui-container" style="width:60%;margin-top: 10px">--}}
-    {{--<div class="layui-row">--}}
-        {{--<div class="layui-col-xs4 layui-col-sm5 layui-col-md8">--}}
-            {{--<div align="center">--}}
-                {{--@foreach ($list as $user)--}}
-                {{--{{ $user->name }}--}}
-                {{--@endforeach--}}
-                {{--{{ $list->links() }}--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-
-    {{--</div>--}}
-
-{{--</div>--}}
-
-@include('home/public/foot')
+{{--分页--}}
+<div class="row">
+    <div class="col-xs4 col-sm5 col-md8 col-lg8">
+        <div align="center">
+        @foreach ($list as $user)
+        {{ $user->name }}
+        @endforeach
+        {{ $list->links() }}
+        </div>
+    </div>
 </div>
+
+
+</div>
+{{--底部foot信息--}}
+@include('home/public/foot')
+
+
 @endsection

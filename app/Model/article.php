@@ -12,7 +12,7 @@ class article extends Model
      *
      */
     public static function getAll(){
-        return static::orderBy('create_time','desc')->paginate(2);
+        return static::orderBy('create_time','desc')->paginate(5);
     }
 
     /*

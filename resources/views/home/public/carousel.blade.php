@@ -10,9 +10,6 @@
         </ol>
         <!-- Carousel items -->
         <div class="carousel-inner">
-            {{--<div class="active item">…</div>--}}
-            {{--<div class="item">…</div>--}}
-            {{--<div class="item">…</div>--}}
             <div class="item active"><img src="{{ asset('1.jpg') }}"></div>
             <div class="item"><img src="{{ asset('2.jpg') }}"></div>
             <div class="item"><img src="{{ asset('3.jpg') }}"></div>
